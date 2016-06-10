@@ -1,4 +1,4 @@
-default<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>OnlineBanking</title>
@@ -7,8 +7,8 @@ default<!DOCTYPE html>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <%= render 'shared/navbar' %>
+  <%= yield %>
 
 </body>
 </html>
