@@ -6,7 +6,7 @@ devise_for :users do
   get "home"=>'home#home' , as: :home
 
   
-  get "transfers"=>'pages#transfers' , as: :transfers
+  get "WireTransfer"=>'pages#transfers' , as: :transfers
 
   get "taxreturns"=>'pages#taxreturns' , as: :taxreturns
 
