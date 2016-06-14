@@ -3,12 +3,12 @@ devise_for :users do
  get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  get 'home/home'
+  get "home"=>'home#home' , as: :home
 
   
-  get 'pages/transfers'
+  get "transfers"=>'pages#transfers' , as: :transfers
 
-  get 'pages/taxreturn'
+  get "taxreturns"=>'pages#taxreturns' , as: :taxreturns
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
