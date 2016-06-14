@@ -7,8 +7,8 @@ devise_for :users do
 
   
   get "transfers"=>'pages#transfers' , as: :transfer
-  #get "WireTransfer"=>'pages#transfers' , as: :transfer
-  get "taxreturns"=>'pages#taxreturns' , as: :taxreturns
+  get "WireTransfer"=>'pages#transfers' , as: :transfer
+  #get "taxreturns"=>'pages#taxreturns' , as: :taxreturns
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
